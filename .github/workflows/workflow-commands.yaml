@@ -28,7 +28,7 @@ jobs:
 
       - name: masking value 
         run: | 
-          echo "::add-mask::Secret string"
+          echo "::add-mask::Secret String"
 
       - name: Echo secret
         run: | 
