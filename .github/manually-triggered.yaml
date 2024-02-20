@@ -1,0 +1,10 @@
+name: manyally triggered workflow 
+on:
+  workflow_dispatch:
+
+jobs:
+  log-ingo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo $GITHUB_REF
