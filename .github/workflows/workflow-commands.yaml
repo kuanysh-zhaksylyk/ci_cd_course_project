@@ -8,3 +8,14 @@ jobs:
       - name: setting an error message
         run: |
           echo "::error::Missing semicoloumn"
+      - name: Setting an error message
+        run: echo "::error title=Error title, file=app.js, line=2, 
+            endLine=3, col=5, endColumn=7::Missing Semicolumn"
+
+      - name: Setting a debug 
+        run: echo "::debug title=Debug title, file=app.js, line=2, 
+            endLine=3, col=5, endColumn=7::Missing Semicolumn"
+      
+      - name: Setting a warning 
+        run: echo "::warning title=Warning title, file=app.js, line=2, 
+            endLine=3, col=5, endColumn=7::Missing Semicolumn"
